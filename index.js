@@ -2,7 +2,7 @@ var app = new Vue({
   el: '#app',
   data: {
     date: "Sunday, November 15th",
-    link: "https://www.youtube.com/embed/HSndhYOUyAY",
+    link: "https://www.youtube.com/embed/22IbsrQCkKU",
     meetings: [
       { name: 'Example', link: 'https://www.churchofjesuschrist.org/?lang=eng' },
       { name: 'Young Men', link: 'https://www.someZoomLink.com' }
