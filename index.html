@@ -1,17 +1,68 @@
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
-  <title>29th Ward</title>
+  <title>Smithfield 29th Ward</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Smithfield 29th Ward">
   <meta name="author" content="smithfield29thWard">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="church-of-jesus-christ-favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
-  <h1>Smithfield 29th Ward</h1>
-  <script src="js/scripts.js"></script>
+  <section id="app">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="#" class="navbar-item is-size-5">
+          <figure class="image is-24x24">
+            <img class="is-rounded" src="church-of-jesus-christ-favicon.ico">
+          </figure>
+          <span class="ml-2">Smithfield 29th Ward</span>
+
+        </a>
+      </div>
+    </nav>
+    <section class="section pt-2">
+      <div class="container">
+        <h1 class="title">Sacrament Meeting</h1>
+        <h2 class="subtitle">
+          {{date}}
+        </h2>
+        <figure class="image is-16by9">
+          <iframe class="has-ratio" width="640" height="360" :src="link" frameborder="0" allowfullscreen></iframe>
+        </figure>
+      </div>
+    </section>
+
+    <section v-if="meetings.length > 0" class="section pt-0">
+      <div class="container">
+        <h1 class="title">Classes</h1>
+        <h6 class="subtitle is-6">
+          Please contact your instructor if your class is not listed or you do not have a required password.
+        </h6>
+        <div class="container" id="classes">
+          <aside class="menu">
+            <div v-for="meeting in meetings">
+              <ul class="menu-list">
+                <li>
+                  <a :href="meeting.link">
+                    <span class="has-text-weight-semibold">{{meeting.name + ":"}}</span>
+                    <span>{{meeting.link}}</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </section>
+  <script src="index.js"></script>
 </body>
+
 </html>
