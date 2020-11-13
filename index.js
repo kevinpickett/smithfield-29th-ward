@@ -4,8 +4,8 @@ var app = new Vue({
     date: "Sunday, November 15th",
     link: "https://www.youtube.com/embed/22IbsrQCkKU",
     meetings: [
-      { name: 'Example', link: 'https://www.churchofjesuschrist.org/?lang=eng' },
-      { name: 'Young Men', link: 'https://www.someZoomLink.com' }
+      { name: 'Adult Sunday School @ 2:45', link: 'https://us05web.zoom.us/j/86917141620?pwd=OWdmV3FHZ1VmaVlkdW9lN0lMSlhoQT09' },
+      { name: 'Youth Sunday School @ 3:30', link: 'https://us05web.zoom.us/j/89979724476?pwd=bkJZeTZkM0ptRTJBaC9JR1RRSGVLQT09' }
     ]
   }
 })
@@ -13,7 +13,7 @@ var app = new Vue({
 /*
     // Example Data
     data: {
-        date: "Sunday, November 15th",
+        date: "November 15th",
         link: "https://www.youtube.com/embed/HSndhYOUyAY",
         meetings: [
             { name: 'Example', link: 'https://www.churchofjesuschrist.org/?lang=eng' }
