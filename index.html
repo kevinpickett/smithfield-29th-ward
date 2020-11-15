@@ -19,11 +19,7 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a href="#" class="navbar-item is-size-5">
-          <figure class="image is-24x24">
-            <img class="is-rounded" src="home-heart-black.png">
-          </figure>
           <span class="ml-2">Smithfield 29th Ward</span>
-
         </a>
       </div>
     </nav>
@@ -59,6 +55,14 @@
             </div>
           </aside>
         </div>
+      </div>
+    </section>
+    
+    <section v-if="meetings.length > 0" class="section pt-0">
+      <div class="container">
+        <h6 class="subtitle is-6">
+          This website is not an official, Church-sponsored product.
+        </h6>
       </div>
     </section>
   </section>
