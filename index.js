@@ -18,3 +18,6 @@ var app = new Vue({
         ]
     }
 */
+
+// 11/29: https://www.youtube.com/embed/3D5fIMKOy0g
+// 12/6:  https://www.youtube.com/embed/dOkfSVHtWIE
