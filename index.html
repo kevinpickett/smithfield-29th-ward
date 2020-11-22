@@ -23,17 +23,28 @@
         </a>
       </div>
     </nav>
-    <section class="section pt-2">
+    <section class="section pt-2 pb-2">
       <div class="container">
         <h1 class="title">Sacrament Meeting</h1>
         <h2 class="subtitle">
           {{date}}
         </h2>
         <figure class="image is-16by9">
-          <iframe class="has-ratio" width="640" height="360" :src="link" frameborder="0" allowfullscreen></iframe>
+          <iframe class="has-ratio" width="640" height="360" :src="embed" frameborder="0" allowfullscreen></iframe>
         </figure>
+        <div class="pt-2">
+          <p class="subtitle is-6 pt-2">
+            <strong>Link:</strong> 
+            <a :href="link" target="_blank" class="is-hidden-touch">{{link}}</a>
+            <a :href="link" class="is-hidden-desktop">{{link}}</a>
+          </p>
+          <button class="button is-ghost is-small" @click="modalState = true">Video Player Issues</button>
+        </div>
+        
       </div>
     </section>
+
+    <hr>
 
     <section v-if="meetings.length > 0" class="section pt-0">
       <div class="container">
@@ -48,7 +59,7 @@
                 <li>
                   <a :href="meeting.link">
                     <span class="has-text-weight-semibold">{{meeting.name + ":"}}</span>
-                    <span>{{meeting.link}}</span>
+                    <span style="word-wrap: break-word;">{{meeting.link}}</span>
                   </a>
                 </li>
               </ul>
@@ -77,6 +88,26 @@
         </p>
       </div>
     </section>
+
+    <div class="modal is-active" v-if="modalState">
+      <div class="modal-background" @click="modalState = false"></div>
+      <div class="modal-content">
+        <div class="box mx-5">
+          <div class="content pt-1">
+            <p class="title mb-2">Broken Embedded Player</p>
+            <ul>
+              <li>We apologize for any confusion this has caused.</li>
+              <li>Our Youtube account does not meet the requirements to embed Youtube Live streams.</li>
+              <li>We are testing some changes this week (11/22) to see if it will function.</li>
+              <li>If the error continues, we will remove the embedded player next week.</li>
+              <li>Link to stream on Youtube: <a :href="link" target="_blank" class="is-hidden-touch">{{link}}</a>
+            <a :href="link" class="is-hidden-desktop">{{link}}</a></li>
+            </ul>
+          </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close" @click="modalState = false"></button>
+    </div>
+
   </section>
   <script src="index.js"></script>
 </body>
