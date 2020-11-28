@@ -1,13 +1,11 @@
 var app = new Vue({
   el: '#app',
   data: {
-    date: "Sunday, November 22nd",
-    link: "https://youtu.be/9do6O2gztO8",
-    embed: "https://www.youtube.com/embed/9do6O2gztO8",
+    date: "Sunday, November 29th",
+    link: "https://youtu.be/3D5fIMKOy0g",
+    embed: "https://www.youtube.com/embed/3D5fIMKOy0g",
     meetings: [
-      { name: 'Relief Society @ 2:45', link: 'https://us05web.zoom.us/j/86249881519?pwd=QTFyZEl0eS8yOWpMaGdNRVJUSXhiQT09' },
-      { name: 'Elders Quorum @ 3:30', link: 'https://us02web.zoom.us/j/87329902416?pwd=Q2xDejR3YUJQR3B1UnlvcUYrWlpKUT09' },
-      { name: 'Stake Devotional @ 7:00', link: 'http://mywebcast.churchofjesuschrist.org/smithfieldutahsouthstake' }
+      { name: 'Sunday School - 5th Sunday Lesson @ 2:45', link: 'https://us05web.zoom.us/j/85335051983?pwd=Qng0OGFsa0ZIY1NzV0FKaEJFaW9Hdz09' }
     ],
     modalState: false
   }
