@@ -1,25 +1,75 @@
 var app = new Vue({
   el: '#app',
   data: {
-    date: "December 6th",
     link: "https://youtu.be/dOkfSVHtWIE",
     embed: "https://www.youtube.com/embed/dOkfSVHtWIE",
-    meetings: [
-      { name: 'Adult Sunday School @ 2:45', link: 'https://us05web.zoom.us/j/86917141620?pwd=OWdmV3FHZ1VmaVlkdW9lN0lMSlhoQT09' },
-      { name: 'Youth Sunday School @ 3:30', link: 'https://us05web.zoom.us/j/89979724476?pwd=bkJZeTZkM0ptRTJBaC9JR1RRSGVLQT09' }
+    // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
+    schedule: [
+      { date: 'December 6th', group: '(A-K)' },
+      { date: 'December 13th', group: '(L-Z)' },
+      { date: 'December 20th', group: '(A-K)' },
+      { date: 'December 27th', group: '(L-Z)' },
     ],
-    modalState: false
-  }
+    // Note is optional. If there is no note,  remove the note property/value.
+    meetings: [
+      { 
+        name: 'Adult Sunday School @ 2:45', 
+        link: 'https://us05web.zoom.us/j/86917141620?pwd=OWdmV3FHZ1VmaVlkdW9lN0lMSlhoQT09', 
+        note: {
+          title: 'Adult Sunday School', 
+          text: 'If the one click link does not let you in, the meeting ID is: "853 3505 1983" and the password is: "837xks".' 
+        }
+      },
+      { 
+        name: 'Youth Sunday School @ 3:30', 
+        link: 'https://us05web.zoom.us/j/89979724476?pwd=bkJZeTZkM0ptRTJBaC9JR1RRSGVLQT09', 
+        note: {
+          title: 'Youth Sunday School', 
+          text: 'If the one click link does not let you in, the meeting ID is: "853 3505 1983" and the password is: "837xks".' 
+        }
+      }
+    ],
+    modalState: false,
+  },
+  computed: {
+    date: function() {
+      return "Sunday, " + this.schedule[0].date + " " + this.schedule[0].group
+    },
+    hasNotes: function() {
+      let count = this.meetings.filter(meeting => meeting.hasOwnProperty('note')).length
+      return count > 0
+    }
+  },
 })
 
 /*
     // Example Data
     data: {
-        date: "November 15th",
-        link: "https://www.youtube.com/embed/HSndhYOUyAY",
-        meetings: [
-            { name: 'Adult Sunday School @ 2:45', link: 'https://us05web.zoom.us/j/86917141620?pwd=OWdmV3FHZ1VmaVlkdW9lN0lMSlhoQT09' },
-            { name: 'Youth Sunday School @ 3:30', link: 'https://us05web.zoom.us/j/89979724476?pwd=bkJZeTZkM0ptRTJBaC9JR1RRSGVLQT09' }
-        ]
+      link: "https://youtu.be/dOkfSVHtWIE",
+      embed: "https://www.youtube.com/embed/dOkfSVHtWIE",
+      // date is now a computed property based on the schedule
+      schedule: [
+        { date: 'December 6th', group: '(A-K)' },
+        { date: 'December 13th', group: '(L-Z)' },
+        { date: 'December 20th', group: '(A-K)' },
+        { date: 'December 27th', group: '(L-Z)' },
+      ],
+      // Note is optional. If there is no note,  remove the no property/value
+      // In below example data meeting[0] has a note and meeting[1] does not have a note. Both are valid
+      meetings: [
+        { 
+          name: 'Adult Sunday School @ 2:45', 
+          link: 'https://us05web.zoom.us/j/86917141620?pwd=OWdmV3FHZ1VmaVlkdW9lN0lMSlhoQT09', 
+          note: {
+            title: 'Adult Sunday School', 
+            text: 'If the one click link does not let you in, the meeting ID is: "853 3505 1983" and the password is: "837xks".' 
+          }
+        },
+        { 
+          name: 'Youth Sunday School @ 3:30', 
+          link: 'https://us05web.zoom.us/j/89979724476?pwd=bkJZeTZkM0ptRTJBaC9JR1RRSGVLQT09', 
+        }
+      ],
+      modalState: false
     }
 */
