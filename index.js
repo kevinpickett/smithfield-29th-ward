@@ -4,6 +4,7 @@ var app = new Vue({
     link: "https://youtu.be/dOkfSVHtWIE",
     embed: "https://www.youtube.com/embed/dOkfSVHtWIE",
     // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
+    // schedule[0] should be for the current upcoming Sunday
     schedule: [
       { date: 'December 6th', group: '(A-K)' },
       { date: 'December 13th', group: '(L-Z)' },
@@ -14,18 +15,18 @@ var app = new Vue({
     meetings: [
       { 
         name: 'Adult Sunday School @ 2:45', 
-        link: 'https://us05web.zoom.us/j/86917141620?pwd=OWdmV3FHZ1VmaVlkdW9lN0lMSlhoQT09', 
+        link: 'https://us05web.zoom.us/j/89233934159?pwd=cnVUUVE2bmxnSnVYNlQ1UWpwSXB4Zz09', 
         note: {
           title: 'Adult Sunday School', 
-          text: 'If the one click link does not let you in, the meeting ID is: "853 3505 1983" and the password is: "837xks".' 
+          text: 'If the one click link does not let you in, the meeting ID is: "892 3393 4159" and the passcode is: "W9sn9i".' 
         }
       },
       { 
         name: 'Youth Sunday School @ 3:30', 
-        link: 'https://us05web.zoom.us/j/89979724476?pwd=bkJZeTZkM0ptRTJBaC9JR1RRSGVLQT09', 
+        link: 'https://us05web.zoom.us/j/82032885152?pwd=TDNhcHhFYzFUbjJqM0VqdG94VGZzdz09', 
         note: {
           title: 'Youth Sunday School', 
-          text: 'If the one click link does not let you in, the meeting ID is: "853 3505 1983" and the password is: "837xks".' 
+          text: 'If the one click link does not let you in, the meeting ID is: "820 3288 5152" and the passcode is: "UzE94N".' 
         }
       }
     ],
