@@ -2,19 +2,20 @@
 
 <head>
   <meta charset="utf-8">
-
   <title>Smithfield 29th Ward</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Smithfield 29th Ward">
   <meta name="author" content="smithfield29thWard">
-
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
   <link rel="icon" href="home-heart-black.png">
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
+  <!-- Vue app mounts here -->
   <section id="app">
+
+    <!-- Nav -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a href="#" class="navbar-item is-size-5">
@@ -22,6 +23,8 @@
         </a>
       </div>
     </nav>
+
+    <!-- Sacrament Meeting -->
     <section class="section pt-2 pb-2">
       <div class="container">
         <h1 class="title">Sacrament Meeting</h1>
@@ -51,6 +54,7 @@
 
     <hr>
 
+    <!-- Classes -->
     <section v-if="meetings.length > 0" class="section pt-0 pb-4">
       <div class="container">
         <h1 class="title">Classes</h1>
@@ -73,7 +77,8 @@
         </div>    
       </div>
     </section>
-      
+
+    <!-- Class Notes - If they exist -->
     <section class="section py-1" v-if="hasNotes">
       <div class="container" v-for="meeting in meetings">
         <h6 class="subtitle is-6 pt-3" v-if="meeting.hasOwnProperty('note')">
@@ -84,6 +89,7 @@
 
     <hr>
 
+    <!-- Calendar/Schedule -->
     <section class="section py-1" id="schedule">
       <div class="container">
         <h1 class="title">Schedule</h1>
@@ -102,6 +108,7 @@
       </div>
     </section>
     
+    <!-- Disclaimer -->
     <section class="section pt-3">
       <hr>
       <div class="container">
@@ -111,6 +118,7 @@
       </div>
     </section>
 
+    <!-- Modal and Modal Content -->
     <div class="modal is-active" v-if="modalState">
       <div class="modal-background" @click="modalState = false"></div>
       <div class="modal-content">
