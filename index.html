@@ -9,7 +9,6 @@
   <meta name="author" content="smithfield29thWard">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-  <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="home-heart-black.png">
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
@@ -38,15 +37,21 @@
             <a :href="link" target="_blank" class="is-hidden-touch">{{link}}</a>
             <a :href="link" class="is-hidden-desktop">{{link}}</a>
           </p>
-          <button class="button is-ghost is-small" @click="modalState = true">Video Player Issues</button>
+          <div class="level is-mobile">
+            <div class="level-left">
+              <a href="#schedule" class="button is-light">Schedule</a>
+            </div>
+            <div class="level-right">
+              <button class="button is-ghost" @click="modalState = true">Video Player Issues</button>
+            </div>
+          </div>
         </div>
-        
       </div>
     </section>
 
     <hr>
 
-    <section v-if="meetings.length > 0" class="section pt-0">
+    <section v-if="meetings.length > 0" class="section pt-0 pb-4">
       <div class="container">
         <h1 class="title">Classes</h1>
         <h6 class="subtitle is-6">
@@ -69,11 +74,31 @@
       </div>
     </section>
       
-    <section class="section pt-1">
-      <div class="container">
-        <h6 class="subtitle is-6">
-          <strong>Sunday School - 5th Sunday Lesson:</strong> If the one click link does not let you in, the meeting ID is: "853 3505 1983" and the password is: "837xks".
+    <section class="section py-1" v-if="hasNotes">
+      <div class="container" v-for="meeting in meetings">
+        <h6 class="subtitle is-6 pt-3" v-if="meeting.hasOwnProperty('note')">
+          <strong>{{meeting.note.title}}:</strong> {{meeting.note.text}}
         </h6>
+      </div>
+    </section>
+
+    <hr>
+
+    <section class="section py-1" id="schedule">
+      <div class="container">
+        <h1 class="title">Schedule</h1>
+        <table class="table is-striped is-fullwidth is-hoverable">
+          <thead>
+            <th>Date</th>
+            <th>Group</th>
+          </thead>
+          <tbody>
+            <tr v-for="day in schedule">
+              <td>{{day.date}}</td>
+              <td>{{day.group}}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
     
@@ -93,11 +118,10 @@
           <div class="content pt-1">
             <p class="title mb-2">Broken Embedded Player</p>
             <ul>
-              <li>We apologize for any confusion this has caused.</li>
-              <li>Our Youtube account does not meet the requirements to embed the Youtube Live player.</li>
-              <li>We are testing some changes this week (11/22) to see if it will function.</li>
-              <li>If the error continues, we will remove the embedded player next week.</li>
+              <li>To this point, our Youtube account hat not met the requirements to embed the Youtube Live player.</li>
+              <li>We are testing some changes this week to see if it will function.</li>
               <li>Link to stream on Youtube: <a :href="link" target="_blank" class="is-hidden-touch">{{link}}</a>
+              <li>We apologize for the confusion</li>
             <a :href="link" class="is-hidden-desktop">{{link}}</a></li>
             </ul>
           </div>
