@@ -6,16 +6,17 @@ var app = new Vue({
     // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
     // schedule[0] should be for the current upcoming Sunday
     schedule: [
-      { date: 'December 6th', group: '(A-K)' },
-      { date: 'December 13th', group: '(L-Z)' },
-      { date: 'December 20th', group: '(A-K)' },
-      { date: 'December 27th', group: '(L-Z)' },
+      { date: 'December 6th', group: 'A-K' },
+      { date: 'December 13th', group: 'L-Z' },
+      { date: 'December 20th', group: 'A-K' },
+      { date: 'December 27th', group: 'L-Z' },
     ],
     // Note is optional. If there is no note,  remove the note property/value.
     meetings: [
       { 
         name: 'Adult Sunday School @ 2:45', 
-        link: 'https://us05web.zoom.us/j/89233934159?pwd=cnVUUVE2bmxnSnVYNlQ1UWpwSXB4Zz09', 
+        link: 'https://us05web.zoom.us/j/89233934159?pwd=cnVUUVE2bmxnSnVYNlQ1UWpwSXB4Zz09',
+        type: 'zoom', 
         note: {
           title: 'Adult Sunday School', 
           text: 'If the one click link does not let you in, the meeting ID is: "892 3393 4159" and the passcode is: "W9sn9i".' 
@@ -23,7 +24,8 @@ var app = new Vue({
       },
       { 
         name: 'Youth Sunday School @ 3:30', 
-        link: 'https://us05web.zoom.us/j/82032885152?pwd=TDNhcHhFYzFUbjJqM0VqdG94VGZzdz09', 
+        link: 'https://us05web.zoom.us/j/82032885152?pwd=TDNhcHhFYzFUbjJqM0VqdG94VGZzdz09',
+        type: 'zoom', 
         note: {
           title: 'Youth Sunday School', 
           text: 'If the one click link does not let you in, the meeting ID is: "820 3288 5152" and the passcode is: "UzE94N".' 
@@ -31,16 +33,35 @@ var app = new Vue({
       }
     ],
     modalState: false,
+    modalType: ''
   },
   computed: {
     date: function() {
-      return "Sunday, " + this.schedule[0].date + " " + this.schedule[0].group
+      return "Sunday, " + this.schedule[0].date + " (" + this.schedule[0].group + ")"
     },
     hasNotes: function() {
       let count = this.meetings.filter(meeting => meeting.hasOwnProperty('note')).length
       return count > 0
+    },
+    haveZoomClass: function() {
+      let count = this.meetings.filter(meeting => (meeting.hasOwnProperty('type') && meeting.type == 'zoom')).length
+      return count > 0
     }
   },
+  methods: {
+    setModal(modalType) {
+      switch(modalType){
+        case 'zoomWaitingScreen':
+        case 'youtubeEmbedBroken':
+          this.modalType = modalType
+          this.modalState = true
+          break;
+        default:
+          this.modalState = false
+      }
+        
+    }
+  }
 })
 
 /*
@@ -60,7 +81,8 @@ var app = new Vue({
       meetings: [
         { 
           name: 'Adult Sunday School @ 2:45', 
-          link: 'https://us05web.zoom.us/j/86917141620?pwd=OWdmV3FHZ1VmaVlkdW9lN0lMSlhoQT09', 
+          link: 'https://us05web.zoom.us/j/86917141620?pwd=OWdmV3FHZ1VmaVlkdW9lN0lMSlhoQT09',
+          type: 'zoom', 
           note: {
             title: 'Adult Sunday School', 
             text: 'If the one click link does not let you in, the meeting ID is: "853 3505 1983" and the password is: "837xks".' 
@@ -68,7 +90,8 @@ var app = new Vue({
         },
         { 
           name: 'Youth Sunday School @ 3:30', 
-          link: 'https://us05web.zoom.us/j/89979724476?pwd=bkJZeTZkM0ptRTJBaC9JR1RRSGVLQT09', 
+          link: 'https://us05web.zoom.us/j/89979724476?pwd=bkJZeTZkM0ptRTJBaC9JR1RRSGVLQT09',
+          type: 'zoom', 
         }
       ],
       modalState: false
