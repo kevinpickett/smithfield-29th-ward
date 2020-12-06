@@ -42,10 +42,10 @@
           </p>
           <div class="level is-mobile">
             <div class="level-left">
-              <a href="#schedule" class="button is-light">Schedule</a>
+              <a href="#schedule" class="button is-ghost"><strong>Schedule</strong></a>
             </div>
             <div class="level-right">
-              <button class="button is-ghost" @click="modalState = true">Video Player Issues</button>
+              <button class="button is-ghost" @click="setModal('youtubeEmbedBroken')"><strong>Video Player Issues</strong></button>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
     <hr>
 
     <!-- Classes -->
-    <section v-if="meetings.length > 0" class="section pt-0 pb-4">
+    <section v-if="meetings.length > 0" class="section pt-0 pb-0">
       <div class="container">
         <h1 class="title">Classes</h1>
         <h6 class="subtitle is-6">
@@ -80,10 +80,15 @@
 
     <!-- Class Notes - If they exist -->
     <section class="section py-1" v-if="hasNotes">
-      <div class="container" v-for="meeting in meetings">
-        <h6 class="subtitle is-6 pt-3" v-if="meeting.hasOwnProperty('note')">
-          <strong>{{meeting.note.title}}:</strong> {{meeting.note.text}}
-        </h6>
+      <div class="container">
+        <div class="container" v-for="meeting in meetings">
+          <h6 class="subtitle is-6 pt-3" v-if="meeting.hasOwnProperty('note')">
+            <strong>{{meeting.note.title}}:</strong> {{meeting.note.text}}
+          </h6>
+        </div>
+        <div class="container pt-4" v-if="haveZoomClass">
+          <button class="button is-ghost" @click="setModal('zoomWaitingScreen')"><strong>Zoom Waiting for Host?</strong></button>
+        </div>
       </div>
     </section>
 
@@ -96,7 +101,7 @@
         <table class="table is-striped is-fullwidth is-hoverable">
           <thead>
             <th>Date</th>
-            <th>Group</th>
+            <th>Last Name</th>
           </thead>
           <tbody>
             <tr v-for="day in schedule">
@@ -124,19 +129,33 @@
       <div class="modal-content">
         <div class="box mx-5">
           <div class="content pt-1">
-            <p class="title mb-2">Broken Embedded Player</p>
-            <ul>
-              <li>To this point, our Youtube account hat not met the requirements to embed the Youtube Live player.</li>
-              <li>We are testing some changes this week to see if it will function.</li>
-              <li>Link to stream on Youtube: <a :href="link" target="_blank" class="is-hidden-touch">{{link}}</a>
-              <li>We apologize for the confusion</li>
-            <a :href="link" class="is-hidden-desktop">{{link}}</a></li>
-            </ul>
+            <div class="container" v-if="modalType == 'youtubeEmbedBroken'">
+              <p class="title mb-2">Broken Embedded Player</p>
+              <ul>
+                <li>To this point, our Youtube account hat not met the requirements to embed the Youtube Live player.</li>
+                <li>We are testing some changes this week to see if it will function.</li>
+                <li>Link to stream on Youtube: <a :href="link" target="_blank" class="is-hidden-touch">{{link}}</a>
+                <li>We apologize for the confusion</li>
+                <a :href="link" class="is-hidden-desktop">{{link}}</a></li>
+              </ul>
+            </div>
+            <div class="container" v-if="modalType == 'zoomWaitingScreen'">
+              <p class="title mb-2">Waiting for Meeting to Begin</p>
+              <ul>
+                <li>We have changed the settings used for our Zoom meetings.</li> 
+                <li>When you attempt to join, if you are on a screen titled "Waiting for Host to Start Meeting", "Waiting for Meeting to Begin" or something similar, <strong>please wait on that screen.</strong></p> 
+                <li>When the teacher begins the Zoom meeting, you will automatically join the meeting.</li>
+                <li>If you have still not joined the meeting 5 minutes after the meeting was scheduled to begin, please contact the ward technology specialists.</li>
+                <li>This will be common if you attempt to join the meeting early.</li>
+              </ul>
+            </div>
           </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close" @click="modalState = false"></button>
       </div>
-      <button class="modal-close is-large" aria-label="close" @click="modalState = false"></button>
     </div>
 
+  <!-- Vue app mounting "section" closing tag -->
   </section>
   <script src="index.js"></script>
 </body>
