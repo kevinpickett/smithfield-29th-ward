@@ -9,27 +9,19 @@ var app = new Vue({
       { date: 'December 13th', group: 'L-Z' },
       { date: 'December 20th', group: 'A-K' },
       { date: 'December 27th', group: 'L-Z' },
+      { date: 'January 3rd', group: 'A-K' },
     ],
     // Note is optional. If there is no note,  remove the note property/value.
     meetings: [
-      { 
-        name: 'Adult Sunday School @ 2:45', 
-        link: 'https://us05web.zoom.us/j/89233934159?pwd=cnVUUVE2bmxnSnVYNlQ1UWpwSXB4Zz09',
-        type: 'zoom', 
-        note: {
-          title: 'Adult Sunday School', 
-          text: 'If the one click link does not let you in, the meeting ID is: "892 3393 4159" and the passcode is: "W9sn9i".' 
-        }
-      },
-      { 
-        name: 'Youth Sunday School @ 3:30', 
-        link: 'https://us05web.zoom.us/j/82032885152?pwd=TDNhcHhFYzFUbjJqM0VqdG94VGZzdz09',
-        type: 'zoom', 
-        note: {
-          title: 'Youth Sunday School', 
-          text: 'If the one click link does not let you in, the meeting ID is: "820 3288 5152" and the passcode is: "UzE94N".' 
-        }
-      }
+//       { 
+//         name: 'Adult Sunday School @ 2:45', 
+//         link: 'https://us05web.zoom.us/j/89233934159?pwd=cnVUUVE2bmxnSnVYNlQ1UWpwSXB4Zz09',
+//         type: 'zoom', 
+//         note: {
+//           title: 'Adult Sunday School', 
+//           text: 'If the one click link does not let you in, the meeting ID is: "892 3393 4159" and the passcode is: "W9sn9i".' 
+//         }
+//       },
     ],
     modalState: false,
     modalType: ''
