@@ -1,12 +1,11 @@
 var app = new Vue({
   el: '#app',
   data: {
-    link: "https://youtu.be/dOkfSVHtWIE",
-    embed: "https://www.youtube.com/embed/dOkfSVHtWIE",
+    link: "https://youtu.be/O65KsEI-kAs",
+    embed: "https://www.youtube.com/embed/O65KsEI-kAs",
     // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
     // schedule[0] should be for the current upcoming Sunday
-    schedule: [
-      { date: 'December 6th', group: 'A-K' },
+    schedule: [      
       { date: 'December 13th', group: 'L-Z' },
       { date: 'December 20th', group: 'A-K' },
       { date: 'December 27th', group: 'L-Z' },
