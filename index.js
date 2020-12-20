@@ -1,15 +1,15 @@
 var app = new Vue({
   el: '#app',
   data: {
-    link: "https://youtu.be/O65KsEI-kAs",
-    embed: "https://www.youtube.com/embed/O65KsEI-kAs",
+    link: "https://youtu.be/mF_agd669O4",
+    embed: "https://www.youtube.com/embed/mF_agd669O4",
     // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
     // schedule[0] should be for the current upcoming Sunday
-    schedule: [      
-      { date: 'December 13th', group: 'L-Z' },
+    schedule: [
       { date: 'December 20th', group: 'A-K' },
       { date: 'December 27th', group: 'L-Z' },
       { date: 'January 3rd', group: 'A-K' },
+      { date: 'January 10th', group: 'L-Z' },
     ],
     // Note is optional. If there is no note,  remove the note property/value.
     meetings: [
