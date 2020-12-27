@@ -6,10 +6,10 @@ var app = new Vue({
     // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
     // schedule[0] should be for the current upcoming Sunday
     schedule: [
-      { date: 'December 20th', group: 'A-K' },
       { date: 'December 27th', group: 'L-Z' },
       { date: 'January 3rd', group: 'A-K' },
       { date: 'January 10th', group: 'L-Z' },
+      { date: 'January 17th', group: 'A-K' },
     ],
     // Note is optional. If there is no note,  remove the note property/value.
     meetings: [
