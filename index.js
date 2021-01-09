@@ -1,45 +1,45 @@
 var app = new Vue({
   el: '#app',
   data: {
-    link: "https://youtu.be/ldaL7s5murI",
-    embed: "https://www.youtube.com/embed/ldaL7s5murI",
+    link: "https://youtu.be/4fOaHuGoZVI",
+    embed: "https://www.youtube.com/embed/4fOaHuGoZVI",
     // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
     // schedule[0] should be for the current upcoming Sunday
     schedule: [
-      { date: 'January 3rd', group: 'A-K' },
       { date: 'January 10th', group: 'L-Z' },
       { date: 'January 17th', group: 'A-K' },
       { date: 'January 24th', group: 'L-Z' },
+      { date: 'January 31st', group: 'A-K' },
     ],
     // Note is optional. If there is no note,  remove the note property/value.
     meetings: [
-      { 
-        name: 'Gospel Doctrine @ 10:15', 
-        link: 'https://us05web.zoom.us/j/84406915914?pwd=ekZTWFEyU1p6c1pqTTMxUEJRTkVwUT09',
-        type: 'zoom', 
-        note: {
-          title: 'Gospel Doctrine', 
-          text: 'If the one click link does not let you in, the meeting ID is: "844 0691 5914" and the passcode is: "3Dc8Zq".' 
-        }
-      },
-      { 
-        name: 'Youth Sunday School 11-13 @ 11:00', 
-        link: 'https://us05web.zoom.us/j/89036468401?pwd=VUlSMEc4MWYzYWxZckNrQlhTSXdDdz09',
-        type: 'zoom', 
-        note: {
-          title: 'Youth Sunday School 11-13', 
-          text: 'If the one click link does not let you in, the meeting ID is: "890 3646 8401" and the passcode is: "TP38jy".' 
-        }
-      },
-      { 
-        name: 'Youth Sunday School 14-17 @ 11:00', 
-        link: 'https://us05web.zoom.us/j/89391216908?pwd=RjJnT0JLVXRiVkZ6clJXcUhGb1I2UT09',
-        type: 'zoom', 
-        note: {
-          title: 'Youth Sunday School 14-17', 
-          text: 'If the one click link does not let you in, the meeting ID is: "893 9121 6908" and the passcode is: "cEZpW8".' 
-        }
-      }
+//       { 
+//         name: 'Gospel Doctrine @ 10:15', 
+//         link: 'https://us05web.zoom.us/j/84406915914?pwd=ekZTWFEyU1p6c1pqTTMxUEJRTkVwUT09',
+//         type: 'zoom', 
+//         note: {
+//           title: 'Gospel Doctrine', 
+//           text: 'If the one click link does not let you in, the meeting ID is: "844 0691 5914" and the passcode is: "3Dc8Zq".' 
+//         }
+//       },
+//       { 
+//         name: 'Youth Sunday School 11-13 @ 11:00', 
+//         link: 'https://us05web.zoom.us/j/89036468401?pwd=VUlSMEc4MWYzYWxZckNrQlhTSXdDdz09',
+//         type: 'zoom', 
+//         note: {
+//           title: 'Youth Sunday School 11-13', 
+//           text: 'If the one click link does not let you in, the meeting ID is: "890 3646 8401" and the passcode is: "TP38jy".' 
+//         }
+//       },
+//       { 
+//         name: 'Youth Sunday School 14-17 @ 11:00', 
+//         link: 'https://us05web.zoom.us/j/89391216908?pwd=RjJnT0JLVXRiVkZ6clJXcUhGb1I2UT09',
+//         type: 'zoom', 
+//         note: {
+//           title: 'Youth Sunday School 14-17', 
+//           text: 'If the one click link does not let you in, the meeting ID is: "893 9121 6908" and the passcode is: "cEZpW8".' 
+//         }
+//       }
     ],
     modalState: false,
     modalType: ''
