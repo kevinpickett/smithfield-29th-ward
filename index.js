@@ -19,7 +19,7 @@ var app = new Vue({
           type: 'zoom',
           note: {
             title: 'Gospel Doctrine', 
-            text: 'Meeting ID is: "844 0691 5914" and the passcode is: "3Dc8Zq".'
+            text: 'Meeting ID: "844 0691 5914" Passcode: "3Dc8Zq".'
           }
         },
       { 
@@ -28,7 +28,7 @@ var app = new Vue({
         type: 'zoom', 
         note: {
           title: 'Youth Sunday School 11-13', 
-          text: 'Meeting ID is: "890 3646 8401" and the passcode is: "TP38jy".' 
+          text: 'Meeting ID: "890 3646 8401" Passcode: "TP38jy".' 
         }
       },
       { 
@@ -37,7 +37,7 @@ var app = new Vue({
         type: 'zoom', 
         note: {
           title: 'Youth Sunday School 14-17', 
-          text: 'Meeting ID is: "893 9121 6908" and the passcode is: "cEZpW8".' 
+          text: 'Meeting ID: "893 9121 6908" Passcode: "cEZpW8".' 
         }
       },
 //       { 
