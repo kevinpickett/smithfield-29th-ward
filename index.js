@@ -1,27 +1,27 @@
 var app = new Vue({
   el: '#app',
   data: {
-    link: "https://youtu.be/4fOaHuGoZVI",
-    embed: "https://www.youtube.com/embed/4fOaHuGoZVI",
+    link: "https://www.youtube.com/watch?v=FTB7YJ_X0fA",
+    embed: "https://www.youtube.com/embed/FTB7YJ_X0fA",
     // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
     // schedule[0] should be for the current upcoming Sunday
     schedule: [
-      { date: 'January 10th', group: 'L-Z' },
       { date: 'January 17th', group: 'A-K' },
       { date: 'January 24th', group: 'L-Z' },
       { date: 'January 31st', group: 'A-K' },
+      { date: 'February yth', group: 'L-Z' },
     ],
     // Note is optional. If there is no note,  remove the note property/value.
     meetings: [
-       { 
-         name: 'Elders Quorum Meeting @ 11:00 am', 
-         link: 'https://us02web.zoom.us/j/4989505755?pwd=VS9MT1RIR2ZFblJmNnZrOUp4eVJBQT09',
-         type: 'zoom', 
-         note: {
-           title: 'Elders Quorum Meeting', 
-           text: 'If the one click link does not let you in, the meeting ID is: "498 950 5755" and the passcode is: "125945".' 
-         }
-       },
+//        { 
+//          name: 'Elders Quorum Meeting @ 11:00 am', 
+//          link: 'https://us02web.zoom.us/j/4989505755?pwd=VS9MT1RIR2ZFblJmNnZrOUp4eVJBQT09',
+//          type: 'zoom', 
+//          note: {
+//            title: 'Elders Quorum Meeting', 
+//            text: 'If the one click link does not let you in, the meeting ID is: "498 950 5755" and the passcode is: "125945".' 
+//          }
+//        },
 //       { 
 //         name: 'Youth Sunday School 11-13 @ 11:00', 
 //         link: 'https://us05web.zoom.us/j/89036468401?pwd=VUlSMEc4MWYzYWxZckNrQlhTSXdDdz09',
