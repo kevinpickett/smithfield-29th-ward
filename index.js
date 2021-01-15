@@ -15,29 +15,29 @@ var app = new Vue({
     meetings: [
         { 
           name: 'Gospel Doctrine @ 10:15',
-          link: 'https://us05web.zoom.us/j/84406915914?pwd=ekZTWFEyU1p6c1pqTTMxUEJRTkVwUT09',
+          link: 'https://us05web.zoom.us/j/88275242047?pwd=azNybzNONVZPM0Qwb3NMQTdFWVdaUT09',
           type: 'zoom',
           note: {
             title: 'Gospel Doctrine', 
-            text: 'Meeting ID: "844 0691 5914" Passcode: "3Dc8Zq".'
+            text: 'Meeting ID: "882 7524 2047" Passcode: "V91VjE".'
           }
         },
       { 
         name: 'Youth Sunday School 11-13 @ 11:00', 
-        link: 'https://us05web.zoom.us/j/89036468401?pwd=VUlSMEc4MWYzYWxZckNrQlhTSXdDdz09',
+        link: 'https://us05web.zoom.us/j/87051849426?pwd=bXJrdlpyZHJvbDJmUkZqbGt5R0lLZz09',
         type: 'zoom', 
         note: {
           title: 'Youth Sunday School 11-13', 
-          text: 'Meeting ID: "890 3646 8401" Passcode: "TP38jy".' 
+          text: 'Meeting ID: "870 5184 9426" Passcode: "QUGF2c".' 
         }
       },
       { 
         name: 'Youth Sunday School 14-17 @ 11:00', 
-        link: 'https://us05web.zoom.us/j/89391216908?pwd=RjJnT0JLVXRiVkZ6clJXcUhGb1I2UT09',
+        link: 'https://us05web.zoom.us/j/84831164387?pwd=azhiSWd4K0ZkUG1aSG5PdUxudmlRUT09',
         type: 'zoom', 
         note: {
           title: 'Youth Sunday School 14-17', 
-          text: 'Meeting ID: "893 9121 6908" Passcode: "cEZpW8".' 
+          text: 'Meeting ID: "848 3116 4387" Passcode: "X1MxMA".' 
         }
       },
 //       { 
