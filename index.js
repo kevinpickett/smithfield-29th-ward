@@ -13,7 +13,34 @@ var app = new Vue({
     ],
     // Note is optional. If there is no note,  remove the note property/value.
     meetings: [
-//        { 
+        { 
+          name: 'Gospel Doctrine @ 10:15',
+          link: 'https://us05web.zoom.us/j/84406915914?pwd=ekZTWFEyU1p6c1pqTTMxUEJRTkVwUT09',
+          type: 'zoom',
+          note: {
+            title: 'Gospel Doctrine', 
+            text: 'Meeting ID is: "844 0691 5914" and the passcode is: "3Dc8Zq".'
+          }
+        },
+      { 
+        name: 'Youth Sunday School 11-13 @ 11:00', 
+        link: 'https://us05web.zoom.us/j/89036468401?pwd=VUlSMEc4MWYzYWxZckNrQlhTSXdDdz09',
+        type: 'zoom', 
+        note: {
+          title: 'Youth Sunday School 11-13', 
+          text: 'Meeting ID is: "890 3646 8401" and the passcode is: "TP38jy".' 
+        }
+      },
+      { 
+        name: 'Youth Sunday School 14-17 @ 11:00', 
+        link: 'https://us05web.zoom.us/j/89391216908?pwd=RjJnT0JLVXRiVkZ6clJXcUhGb1I2UT09',
+        type: 'zoom', 
+        note: {
+          title: 'Youth Sunday School 14-17', 
+          text: 'Meeting ID is: "893 9121 6908" and the passcode is: "cEZpW8".' 
+        }
+      },
+//       { 
 //          name: 'Elders Quorum Meeting @ 11:00 am', 
 //          link: 'https://us02web.zoom.us/j/4989505755?pwd=VS9MT1RIR2ZFblJmNnZrOUp4eVJBQT09',
 //          type: 'zoom', 
@@ -22,24 +49,6 @@ var app = new Vue({
 //            text: 'If the one click link does not let you in, the meeting ID is: "498 950 5755" and the passcode is: "125945".' 
 //          }
 //        },
-//       { 
-//         name: 'Youth Sunday School 11-13 @ 11:00', 
-//         link: 'https://us05web.zoom.us/j/89036468401?pwd=VUlSMEc4MWYzYWxZckNrQlhTSXdDdz09',
-//         type: 'zoom', 
-//         note: {
-//           title: 'Youth Sunday School 11-13', 
-//           text: 'If the one click link does not let you in, the meeting ID is: "890 3646 8401" and the passcode is: "TP38jy".' 
-//         }
-//       },
-//       { 
-//         name: 'Youth Sunday School 14-17 @ 11:00', 
-//         link: 'https://us05web.zoom.us/j/89391216908?pwd=RjJnT0JLVXRiVkZ6clJXcUhGb1I2UT09',
-//         type: 'zoom', 
-//         note: {
-//           title: 'Youth Sunday School 14-17', 
-//           text: 'If the one click link does not let you in, the meeting ID is: "893 9121 6908" and the passcode is: "cEZpW8".' 
-//         }
-//       }
     ],
     modalState: false,
     modalType: ''
