@@ -9,7 +9,7 @@ var app = new Vue({
       { date: 'January 17th', group: 'A-K' },
       { date: 'January 24th', group: 'L-Z' },
       { date: 'January 31st', group: 'A-K' },
-      { date: 'February yth', group: 'L-Z' },
+      { date: 'February 7th', group: 'L-Z' },
     ],
     // Note is optional. If there is no note,  remove the note property/value.
     meetings: [
