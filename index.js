@@ -42,12 +42,12 @@ var app = new Vue({
 //         }
 //       },
       { 
-         name: 'Elders Quorum Meeting @ 11:00 am', 
-         link: 'https://us02web.zoom.us/j/4989505755?pwd=VS9MT1RIR2ZFblJmNnZrOUp4eVJBQT09',
+         name: 'Elders Quorum Meeting @ 10:15 am', 
+         link: 'https://zoom.us/j/96205487511?pwd=L3B1VTFQVVhEdU5Vd2hubzhEcVZMdz09',
          type: 'zoom', 
          note: {
            title: 'Elders Quorum Meeting', 
-           text: 'Meeting ID: "498 950 5755" Passcode: "125945"' 
+           text: 'Meeting ID: "962 0548 7511" Passcode: "478813"' 
          }
        },
     ],
