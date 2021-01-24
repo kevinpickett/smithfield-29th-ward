@@ -42,12 +42,21 @@ var app = new Vue({
 //         }
 //       },
       { 
-         name: 'Elders Quorum Meeting @ 10:15 am', 
+         name: 'Elders Quorum @ 10:15 am', 
          link: 'https://zoom.us/j/96205487511?pwd=L3B1VTFQVVhEdU5Vd2hubzhEcVZMdz09',
          type: 'zoom', 
          note: {
            title: 'Elders Quorum Meeting', 
            text: 'Meeting ID: "962 0548 7511" Passcode: "478813"' 
+         }
+       },
+      { 
+         name: 'Relief Society @ 11:00 am', 
+         link: 'https://us05web.zoom.us/j/82893173558?pwd=bnJ1dVM4USt2R1Bkb2JzaXhDdk9zZz09',
+         type: 'zoom', 
+         note: {
+           title: 'Relief Society', 
+           text: 'Meeting ID: "828 9317 3558" Passcode: "eha5C5"' 
          }
        },
     ],
