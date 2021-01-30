@@ -58,6 +58,7 @@ var app = new Vue({
 //            text: 'Meeting ID: "828 9317 3558" Passcode: "eha5C5"' 
 //          }
 //        },
+      {
          name: '5th Sunday Lesson @ 10:15 am', 
          link: 'https://zoom.us/j/96205487511?pwd=L3B1VTFQVVhEdU5Vd2hubzhEcVZMdz09',
          type: 'zoom', 
