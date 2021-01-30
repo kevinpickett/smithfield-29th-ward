@@ -60,11 +60,11 @@ var app = new Vue({
 //        },
       {
          name: '5th Sunday Lesson @ 10:15 am', 
-         link: 'https://zoom.us/j/96205487511?pwd=L3B1VTFQVVhEdU5Vd2hubzhEcVZMdz09',
+         link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
          type: 'zoom', 
          note: {
            title: '5th Sunday Lesson', 
-           text: 'Meeting ID: "962 0548 7511" Passcode: "478813"' 
+           text: 'Meeting ID: "984 7945 8051" Passcode: "068265"' 
          }
        },
       { 
