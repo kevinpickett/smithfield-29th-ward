@@ -1,16 +1,15 @@
 var app = new Vue({
   el: '#app',
   data: {
-    link: "https://www.youtube.com/watch?v=CTWw_SKIlXU",
-    embed: "https://www.youtube.com/embed/CTWw_SKIlXU",
+    link: "https://www.youtube.com/watch?v=QigIZEIudgI",
+    embed: "https://www.youtube.com/embed/QigIZEIudgI",
     // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
     // schedule[0] should be for the current upcoming Sunday
     schedule: [
-      
-      { date: 'January 24th', group: 'L-Z' },
       { date: 'January 31st', group: 'A-K' },
       { date: 'February 7th', group: 'L-Z' },
       { date: 'February 14th', group: 'A-K' },
+      { date: 'February 21st', group: 'L-Z' },
     ],
     // Note is optional. If there is no note,  remove the note property/value.
     meetings: [
@@ -41,21 +40,38 @@ var app = new Vue({
 //           text: 'Meeting ID: "848 3116 4387" Passcode: "X1MxMA".' 
 //         }
 //       },
-      { 
-         name: 'Elders Quorum @ 10:15 am', 
+//       { 
+//          name: 'Elders Quorum @ 10:15 am', 
+//          link: 'https://zoom.us/j/96205487511?pwd=L3B1VTFQVVhEdU5Vd2hubzhEcVZMdz09',
+//          type: 'zoom', 
+//          note: {
+//            title: 'Elders Quorum Meeting', 
+//            text: 'Meeting ID: "962 0548 7511" Passcode: "478813"' 
+//          }
+//        },
+//       { 
+//          name: 'Relief Society @ 11:00 am', 
+//          link: 'https://us05web.zoom.us/j/82893173558?pwd=bnJ1dVM4USt2R1Bkb2JzaXhDdk9zZz09',
+//          type: 'zoom', 
+//          note: {
+//            title: 'Relief Society', 
+//            text: 'Meeting ID: "828 9317 3558" Passcode: "eha5C5"' 
+//          }
+//        },
+         name: '5th Sunday Lesson @ 10:15 am', 
          link: 'https://zoom.us/j/96205487511?pwd=L3B1VTFQVVhEdU5Vd2hubzhEcVZMdz09',
          type: 'zoom', 
          note: {
-           title: 'Elders Quorum Meeting', 
+           title: '5th Sunday Lesson @ 10:15 am', 
            text: 'Meeting ID: "962 0548 7511" Passcode: "478813"' 
          }
        },
       { 
-         name: 'Relief Society @ 11:00 am', 
+         name: 'Teacher Zoom Training @ 11:00 am', 
          link: 'https://us05web.zoom.us/j/82893173558?pwd=bnJ1dVM4USt2R1Bkb2JzaXhDdk9zZz09',
          type: 'zoom', 
          note: {
-           title: 'Relief Society', 
+           title: 'Teacher Zoom Training', 
            text: 'Meeting ID: "828 9317 3558" Passcode: "eha5C5"' 
          }
        },
