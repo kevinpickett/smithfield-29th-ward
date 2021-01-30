@@ -69,11 +69,11 @@ var app = new Vue({
        },
       { 
          name: 'Teacher Zoom Training @ 11:00 am', 
-         link: 'https://us05web.zoom.us/j/82893173558?pwd=bnJ1dVM4USt2R1Bkb2JzaXhDdk9zZz09',
+         link: 'https://zoom.us/j/94731320831?pwd=Zmk4ajdici9FaXBieWgyVy9OSjhUdz09',
          type: 'zoom', 
          note: {
            title: 'Teacher Zoom Training', 
-           text: 'Meeting ID: "828 9317 3558" Passcode: "eha5C5"' 
+           text: 'Meeting ID: "947 3132 0831" Passcode: "918566"' 
          }
        },
     ],
