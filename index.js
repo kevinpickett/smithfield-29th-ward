@@ -14,33 +14,33 @@ var app = new Vue({
     ],
     // Note is optional. If there is no note,  remove the note property/value.
     meetings: [
-//         { 
-//           name: 'Gospel Doctrine @ 10:15',
-//           link: 'https://us05web.zoom.us/j/88275242047?pwd=azNybzNONVZPM0Qwb3NMQTdFWVdaUT09',
-//           type: 'zoom',
-//           note: {
-//             title: 'Gospel Doctrine', 
-//             text: 'Meeting ID: "882 7524 2047" Passcode: "V91VjE".'
-//           }
-//         },
-//       { 
-//         name: 'Youth Sunday School 11-13 @ 11:00', 
-//         link: 'https://us05web.zoom.us/j/87051849426?pwd=bXJrdlpyZHJvbDJmUkZqbGt5R0lLZz09',
-//         type: 'zoom', 
-//         note: {
-//           title: 'Youth Sunday School 11-13', 
-//           text: 'Meeting ID: "870 5184 9426" Passcode: "QUGF2c".' 
-//         }
-//       },
-//       { 
-//         name: 'Youth Sunday School 14-17 @ 11:00', 
-//         link: 'https://us05web.zoom.us/j/84831164387?pwd=azhiSWd4K0ZkUG1aSG5PdUxudmlRUT09',
-//         type: 'zoom', 
-//         note: {
-//           title: 'Youth Sunday School 14-17', 
-//           text: 'Meeting ID: "848 3116 4387" Passcode: "X1MxMA".' 
-//         }
-//       },
+        { 
+          name: 'Gospel Doctrine @ 10:15',
+          link: 'https://us05web.zoom.us/j/88275242047?pwd=azNybzNONVZPM0Qwb3NMQTdFWVdaUT09',
+          type: 'zoom',
+          note: {
+            title: 'Gospel Doctrine', 
+            text: 'Meeting ID: "882 7524 2047" Passcode: "V91VjE".'
+          }
+        },
+      { 
+        name: 'Youth Sunday School 11-13 @ 11:00', 
+        link: 'https://us05web.zoom.us/j/87051849426?pwd=bXJrdlpyZHJvbDJmUkZqbGt5R0lLZz09',
+        type: 'zoom', 
+        note: {
+          title: 'Youth Sunday School 11-13', 
+          text: 'Meeting ID: "870 5184 9426" Passcode: "QUGF2c".' 
+        }
+      },
+      { 
+        name: 'Youth Sunday School 14-17 @ 11:00', 
+        link: 'https://us05web.zoom.us/j/84831164387?pwd=azhiSWd4K0ZkUG1aSG5PdUxudmlRUT09',
+        type: 'zoom', 
+        note: {
+          title: 'Youth Sunday School 14-17', 
+          text: 'Meeting ID: "848 3116 4387" Passcode: "X1MxMA".' 
+        }
+      },
 //       { 
 //          name: 'Elders Quorum @ 10:15 am', 
 //          link: 'https://zoom.us/j/96205487511?pwd=L3B1VTFQVVhEdU5Vd2hubzhEcVZMdz09',
@@ -59,24 +59,24 @@ var app = new Vue({
 //            text: 'Meeting ID: "828 9317 3558" Passcode: "eha5C5"' 
 //          }
 //        },
-      {
-         name: '5th Sunday Lesson @ 10:15 am', 
-         link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
-         type: 'zoom', 
-         note: {
-           title: '5th Sunday Lesson', 
-           text: 'Meeting ID: "984 7945 8051" Passcode: "068265"' 
-         }
-       },
-      { 
-         name: 'Teacher Zoom Training @ 11:00 am', 
-         link: 'https://zoom.us/j/94731320831?pwd=Zmk4ajdici9FaXBieWgyVy9OSjhUdz09',
-         type: 'zoom', 
-         note: {
-           title: 'Teacher Zoom Training', 
-           text: 'Meeting ID: "947 3132 0831" Passcode: "918566"' 
-         }
-       },
+//       {
+//          name: '5th Sunday Lesson @ 10:15 am', 
+//          link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
+//          type: 'zoom', 
+//          note: {
+//            title: '5th Sunday Lesson', 
+//            text: 'Meeting ID: "984 7945 8051" Passcode: "068265"' 
+//          }
+//        },
+//       { 
+//          name: 'Teacher Zoom Training @ 11:00 am', 
+//          link: 'https://zoom.us/j/94731320831?pwd=Zmk4ajdici9FaXBieWgyVy9OSjhUdz09',
+//          type: 'zoom', 
+//          note: {
+//            title: 'Teacher Zoom Training', 
+//            text: 'Meeting ID: "947 3132 0831" Passcode: "918566"' 
+//          }
+//        },
     ],
     modalState: false,
     modalType: ''
