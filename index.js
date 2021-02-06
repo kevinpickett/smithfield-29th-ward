@@ -25,11 +25,11 @@ var app = new Vue({
         },
       { 
         name: 'Youth Sunday School 11-13 @ 11:00', 
-        link: 'https://us05web.zoom.us/j/87051849426?pwd=bXJrdlpyZHJvbDJmUkZqbGt5R0lLZz09',
+        link: 'https://us05web.zoom.us/j/82813398554?pwd=cXBDenhUZklWZDlCK1VocklZbkhjQT09',
         type: 'zoom', 
         note: {
           title: 'Youth Sunday School 11-13', 
-          text: 'Meeting ID: "870 5184 9426" Passcode: "QUGF2c".' 
+          text: 'Meeting ID: "828 1339 8554" Passcode: "QT8MCu".' 
         }
       },
       { 
