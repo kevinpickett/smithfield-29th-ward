@@ -16,11 +16,11 @@ var app = new Vue({
     meetings: [
         { 
           name: 'Gospel Doctrine @ 10:15',
-          link: 'https://us05web.zoom.us/j/88275242047?pwd=azNybzNONVZPM0Qwb3NMQTdFWVdaUT09',
+          link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
           type: 'zoom',
           note: {
             title: 'Gospel Doctrine', 
-            text: 'Meeting ID: "882 7524 2047" Passcode: "V91VjE".'
+            text: 'Meeting ID: "984 7945 8051" Passcode: "068265".'
           }
         },
       { 
