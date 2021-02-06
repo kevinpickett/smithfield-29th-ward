@@ -1,8 +1,8 @@
 var app = new Vue({
   el: '#app',
   data: {
-    link: "https://www.youtube.com/watch?v=QigIZEIudgI",
-    embed: "https://www.youtube.com/embed/QigIZEIudgI",
+    link: "https://www.youtube.com/watch?v=TlvE0P8Lvbs",
+    embed: "https://www.youtube.com/embed/TlvE0P8Lvbs",
     // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
     // schedule[0] should be for the current upcoming Sunday
     schedule: [
