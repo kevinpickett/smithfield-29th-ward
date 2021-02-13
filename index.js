@@ -40,6 +40,15 @@ var app = new Vue({
 //           text: 'Meeting ID: "863 2748 5143" Passcode: "4b2ft6".' 
 //         }
 //       },
+//       {
+//          name: '5th Sunday Lesson @ 10:15 am', 
+//          link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
+//          type: 'zoom', 
+//          note: {
+//            title: '5th Sunday Lesson', 
+//            text: 'Meeting ID: "984 7945 8051" Passcode: "068265"' 
+//          }
+//        },
       { 
          name: 'Elders Quorum @ 10:15 am', 
          link: 'https://zoom.us/j/96205487511?pwd=L3B1VTFQVVhEdU5Vd2hubzhEcVZMdz09',
@@ -58,24 +67,6 @@ var app = new Vue({
            text: 'Meeting ID: "975 6915 1520" Passcode: "021383"' 
          }
        },
-//       {
-//          name: '5th Sunday Lesson @ 10:15 am', 
-//          link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
-//          type: 'zoom', 
-//          note: {
-//            title: '5th Sunday Lesson', 
-//            text: 'Meeting ID: "984 7945 8051" Passcode: "068265"' 
-//          }
-//        },
-//       { 
-//          name: 'Teacher Zoom Training @ 11:00 am', 
-//          link: 'https://zoom.us/j/94731320831?pwd=Zmk4ajdici9FaXBieWgyVy9OSjhUdz09',
-//          type: 'zoom', 
-//          note: {
-//            title: 'Teacher Zoom Training', 
-//            text: 'Meeting ID: "947 3132 0831" Passcode: "918566"' 
-//          }
-//        },
     ],
     modalState: false,
     modalType: ''
