@@ -67,6 +67,11 @@ var app = new Vue({
            text: 'Meeting ID: "975 6915 1520" Passcode: "021383"' 
          }
        },
+       { 
+         name: 'Primary Singing Time', 
+         link: 'https://youtu.be/vLUH8Q7VLsU',
+         type: 'youtube', 
+       },
     ],
     modalState: false,
     modalType: ''
