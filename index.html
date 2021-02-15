@@ -92,14 +92,16 @@
       </div>
     </section>
     
+    <hr>
+    
     <!-- Primary Singing Time -->
     <section class="section py-1">
       <div class="container">
         <h1 class="title">Primary Singing Time</h1>
-        Link: https://youtu.be/vLUH8Q7VLsU
+        <a :href="singingTime">{{ singingTime }}</a>
       </div>
     </section>
-
+    
     <hr v-if="meetings.length > 0">
 
     <!-- Calendar/Schedule -->
