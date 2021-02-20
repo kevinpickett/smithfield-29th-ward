@@ -95,7 +95,7 @@
     <hr>
     
     <!-- Primary Singing Time -->
-    <section class="section py-1">
+    <section v-if="singingTime" class="section py-1">
       <div class="container">
         <h1 class="title">Primary Singing Time</h1>
         <a :href="singingTime">{{ singingTime }}</a>
