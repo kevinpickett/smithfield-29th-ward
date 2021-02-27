@@ -78,7 +78,7 @@ var app = new Vue({
            text: 'Meeting ID: "984 7945 8051" Passcode: "068265"' 
          }
        },  
-    ]
+    ],
     modalState: false,
     modalType: ''
   },
