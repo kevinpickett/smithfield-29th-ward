@@ -96,7 +96,7 @@ var app = new Vue({
       return link
     },
     sacramentEmbed: function() {
-      let embed = "https://youtu.be/embed/" + this.schedule[0].link
+      let embed = "https://www.youtube.com/embed/" + this.schedule[0].link
       return embed
     },
     meetings: function() {
