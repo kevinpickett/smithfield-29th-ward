@@ -1,8 +1,10 @@
 var app = new Vue({
   el: '#app',
   data: {
-    singingTime: "", // last = https://youtu.be/vLUH8Q7VLsU
     // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
+    // meetings is now a computed property determined from schedule[0] meetingType
+    // converted link and embed to computed properties that rely on the schedule[0] linkHash. Full URL is built in computed properties.
+    // primary singing time falls on same weeks as sunday school, moved singingTime into classes/meetings data
     // schedule[0] should be for the current upcoming Sunday
     schedule: [
       {
@@ -84,11 +86,11 @@ var app = new Vue({
           text: 'Meeting ID: "975 6915 1520" Passcode: "021383"'
         }
       },
-      //        { 
-      //          name: 'Primary Singing Time', 
-      //          link: 'https://youtu.be/vLUH8Q7VLsU',
-      //          type: 'youtube', 
-      //        },
+      // { 
+      //   name: 'Primary Singing Time', 
+      //   link: 'https://youtu.be/vLUH8Q7VLsU',
+      //   type: 'youtube', 
+      // },
     ],
     fifthSundayMeetings: [
       {
@@ -125,13 +127,19 @@ var app = new Vue({
       return embed
     },
     meetings: function () {
-      if (this.schedule[0].meetingType == 'school') {
-        return this.sundaySchoolMeetings
-      } else if (this.schedule[0].meetingType == 'grouping') {
-        return this.groupingMeetings
-      } else if (this.schedule[0].meetingType == 'fifthSunday') {
-        return this.fifthSundayMeetings
+      let meetings
+      switch(this.schedule[0].meetingType) {
+        case 'school':
+          meetings = this.sundaySchoolMeetings
+          break
+        case 'grouping':
+          meetings = this.groupingMeetings
+          break
+        case 'fifthSunday':
+          meetings = this.fifthSundayMeetings
+          break
       }
+      return meetings
     }
   },
   methods: {
