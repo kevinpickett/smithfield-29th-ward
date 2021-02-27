@@ -4,7 +4,8 @@ var app = new Vue({
     singingTime: "", // last = https://youtu.be/vLUH8Q7VLsU
     // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
     // schedule[0] should be for the current upcoming Sunday
-    schedule: [{
+    schedule: [
+      {
         date: 'February 28th',
         group: 'A-K',
         meetingType: "grouping",
@@ -35,7 +36,8 @@ var app = new Vue({
         link: "oJt3miShijA"
       },
     ],
-    sundaySchoolMeetings: [{
+    sundaySchoolMeetings: [
+      {
         name: 'Gospel Doctrine @ 10:15',
         link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
         type: 'zoom',
@@ -63,7 +65,8 @@ var app = new Vue({
         }
       }
     ],
-    groupingMeetings: [{
+    groupingMeetings: [
+      {
         name: 'Elders Quorum @ 10:15 am',
         link: 'https://zoom.us/j/96205487511?pwd=L3B1VTFQVVhEdU5Vd2hubzhEcVZMdz09',
         type: 'zoom',
@@ -87,15 +90,17 @@ var app = new Vue({
       //          type: 'youtube', 
       //        },
     ],
-    fifthSundayMeetings: [{
-      name: '5th Sunday Lesson @ 10:15 am',
-      link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
-      type: 'zoom',
-      note: {
-        title: '5th Sunday Lesson',
-        text: 'Meeting ID: "984 7945 8051" Passcode: "068265"'
-      }
-    }, ],
+    fifthSundayMeetings: [
+      {
+        name: '5th Sunday Lesson @ 10:15 am',
+        link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
+        type: 'zoom',
+        note: {
+          title: '5th Sunday Lesson',
+          text: 'Meeting ID: "984 7945 8051" Passcode: "068265"'
+        }
+      }, 
+    ],
     modalState: false,
     modalType: ''
   },
