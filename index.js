@@ -1,11 +1,34 @@
+/**
+ * Property and Functionality Notes
+ * 
+ * At this point, because the zoom meetings are all using standard repeating links,
+ * all we should need to modify weekly moving forward is the schedule array.
+ * Delete the first element and then add the next element to the end.
+ * I try and keep at least four weeks in there. The v-for in index.html will splice
+ * the schedule and display a max of 4 upcoming weeks.
+ * 
+ * ---Date---
+ * 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)   
+ *
+ * ---Meetings---
+ * Now a computed property determined from schedule[0] meetingType
+ * meetingType refers to second hour and is used in the meetings computed property 
+ * "school" == sunday school, "grouping" == elder/relief, fifthSunday is rare third case
+ *
+ * ---Sacrament Link & Embed---
+ * Converted link and embed to computed properties sacramentLink and sacramentEmbed 
+ * They rely on the schedule[0].linkHash. Full URL is built in the computed properties.
+ *
+ * ---Primary Singing Time---
+ * Singing time falls on same weeks as sunday school, moved singingTime into classes/meetings data
+ *
+ * ---CRITICAL---
+ * schedule[0] should always be for the current upcoming Sunday
+ */
+
 var app = new Vue({
   el: '#app',
   data: {
-    // 'date' is now a computed property based on the schedule (bishop requested we display a schedule with the group that should attend)
-    // meetings is now a computed property determined from schedule[0] meetingType
-    // converted link and embed to computed properties that rely on the schedule[0] linkHash. Full URL is built in computed properties.
-    // primary singing time falls on same weeks as sunday school, moved singingTime into classes/meetings data
-    // schedule[0] should be for the current upcoming Sunday
     schedule: [
       {
         date: 'February 28th',
