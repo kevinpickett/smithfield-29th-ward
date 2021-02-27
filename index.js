@@ -9,31 +9,31 @@ var app = new Vue({
         date: 'February 28th',
         group: 'A-K',
         meetingType: "grouping",
-        link: "OZlTH63N0ec"
+        linkHash: "OZlTH63N0ec"
       },
       {
         date: 'March 7th',
         group: 'L-Z',
         meetingType: "school",
-        link: "5cMpEcMbnSI"
+        linkHash: "5cMpEcMbnSI"
       },
       {
         date: 'March 14th',
         group: 'A-K',
         meetingType: "grouping",
-        link: "0dLeX1fPOp8"
+        linkHash: "0dLeX1fPOp8"
       },
       {
         date: 'March 21st',
         group: 'L-Z',
         meetingType: "school",
-        link: "8AnVBbI0eTo"
+        linkHash: "8AnVBbI0eTo"
       },
       {
         date: 'March 28th',
         group: 'A-K',
         meetingType: "grouping",
-        link: "oJt3miShijA"
+        linkHash: "oJt3miShijA"
       },
     ],
     sundaySchoolMeetings: [
@@ -117,11 +117,11 @@ var app = new Vue({
       return count > 0
     },
     sacramentLink: function () {
-      let link = "https://youtu.be/" + this.schedule[0].link
+      let link = "https://youtu.be/" + this.schedule[0].linkHash
       return link
     },
     sacramentEmbed: function () {
-      let embed = "https://www.youtube.com/embed/" + this.schedule[0].link
+      let embed = "https://www.youtube.com/embed/" + this.schedule[0].linkHash
       return embed
     },
     meetings: function () {
