@@ -114,7 +114,7 @@
             <th>Last Name</th>
           </thead>
           <tbody>
-            <tr v-for="day in schedule">
+            <tr v-for="day in schedule.slice(0, 4)">
               <td>{{day.date}}</td>
               <td>{{day.group}}</td>
             </tr>
