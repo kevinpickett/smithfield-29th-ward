@@ -57,7 +57,7 @@ var app = new Vue({
     ],
     sundaySchoolMeetings: [
       {
-        name: 'Gospel Doctrine @ 10:15',
+        name: 'Gospel Doctrine @ 10:45',
         link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
         type: 'zoom',
         note: {
@@ -66,7 +66,7 @@ var app = new Vue({
         }
       },
       {
-        name: 'Youth Sunday School 11-13 @ 11:00',
+        name: 'Youth Sunday School 11-13 @ 11:30',
         link: 'https://us05web.zoom.us/j/82813398554?pwd=cXBDenhUZklWZDlCK1VocklZbkhjQT09',
         type: 'zoom',
         note: {
@@ -75,7 +75,7 @@ var app = new Vue({
         }
       },
       {
-        name: 'Youth Sunday School 14-17 @ 11:00',
+        name: 'Youth Sunday School 14-17 @ 11:30',
         link: 'https://us05web.zoom.us/j/86327485143?pwd=TURJb2NtYXhudTNwYWJFTkJOR3NzUT09',
         type: 'zoom',
         note: {
@@ -86,7 +86,7 @@ var app = new Vue({
     ],
     groupingMeetings: [
       {
-        name: 'Elders Quorum @ 10:15 am',
+        name: 'Elders Quorum @ 10:45 am',
         link: 'https://zoom.us/j/96205487511?pwd=L3B1VTFQVVhEdU5Vd2hubzhEcVZMdz09',
         type: 'zoom',
         note: {
@@ -95,7 +95,7 @@ var app = new Vue({
         }
       },
       {
-        name: 'Relief Society @ 11:00 am',
+        name: 'Relief Society @ 11:30 am',
         link: 'https://zoom.us/j/97569151520?pwd=WTlPRy9GV2ZxS1dKUWdiYzFodmxUZz09',
         type: 'zoom',
         note: {
@@ -111,7 +111,7 @@ var app = new Vue({
     ],
     fifthSundayMeetings: [
       {
-        name: '5th Sunday Lesson @ 10:15 am',
+        name: '5th Sunday Lesson @ 10:45 am',
         link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
         type: 'zoom',
         note: {
