@@ -31,12 +31,6 @@ var app = new Vue({
   data: {
     schedule: [
       {
-        date: 'March 14th',
-        group: 'A-K',
-        meetingType: "grouping",
-        linkHash: "0dLeX1fPOp8"
-      },
-      {
         date: 'March 21st',
         group: 'L-Z',
         meetingType: "school",
@@ -50,9 +44,15 @@ var app = new Vue({
       },
       {
         date: 'April 4th',
-        group: 'L-Z',
-        meetingType: "school",
+        group: 'General Conference',
+        meetingType: "none",
         linkHash: "gi2zeuM84eg"
+      },
+      {
+        date: 'April 11th',
+        group: 'L-Z',
+        meetingType: "grouping",
+        linkHash: "0dLeX1fPOp8"
       },
     ],
     sundaySchoolMeetings: [
@@ -155,6 +155,8 @@ var app = new Vue({
         case 'fifthSunday':
           meetings = this.fifthSundayMeetings
           break
+        case 'none':
+          meetings = []
       }
       return meetings
     }
