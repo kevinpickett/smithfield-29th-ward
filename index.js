@@ -125,7 +125,7 @@ var app = new Vue({
   },
   computed: {
     date: function () {
-      return "Sunday, " + this.schedule[0].date + " (" + this.schedule[0].group + ")"
+      return "Sunday, " + this.schedule[0].date + " (A-Z No More Split)"
     },
     hasNotes: function () {
       let count = this.meetings.filter(meeting => meeting.hasOwnProperty('note')).length
