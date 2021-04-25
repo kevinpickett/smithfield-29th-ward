@@ -46,7 +46,7 @@ var app = new Vue({
         linkHash: "h9VU_KM_76I"
       },
       {
-        date: 'April 18th',
+        date: 'May 16th',
         meetingType: "school",
         linkHash: "W6mOw7zYVao"
       },
