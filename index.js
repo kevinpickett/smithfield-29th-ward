@@ -32,7 +32,7 @@ var app = new Vue({
     schedule: [
       {
         date: 'April 25th',
-        meetingType: "grouping",
+        meetingType: "fifthSunday",
         linkHash: "5YRZQ5Zw_nQ"
       },
       {
@@ -106,13 +106,22 @@ var app = new Vue({
       // },
     ],
     fifthSundayMeetings: [
+//       {
+//         name: '5th Sunday Lesson @ 10:45 am',
+//         link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
+//         type: 'zoom',
+//         note: {
+//           title: '5th Sunday Lesson',
+//           text: 'Meeting ID: "984 7945 8051" Passcode: "068265"'
+//         }
+//       },
       {
-        name: '5th Sunday Lesson @ 10:45 am',
-        link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
+        name: 'Sacred Grove and the Smith Farm via Zoom at 11:30',
+        link: 'https://zoom.us/j/97569151520?pwd=WTlPRy9GV2ZxS1dKUWdiYzFodmxUZz09',
         type: 'zoom',
         note: {
-          title: '5th Sunday Lesson',
-          text: 'Meeting ID: "984 7945 8051" Passcode: "068265"'
+          title: 'Sacred Grove Virtual Tour',
+          text: 'Meeting ID: "975 6915 1520" Passcode: "021383"'
         }
       }, 
     ],
