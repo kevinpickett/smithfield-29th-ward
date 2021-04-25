@@ -32,25 +32,21 @@ var app = new Vue({
     schedule: [
       {
         date: 'April 25th',
-        group: 'L-Z',
         meetingType: "grouping",
         linkHash: "5YRZQ5Zw_nQ"
       },
       {
         date: 'May 2nd',
-        group: 'A-K',
         meetingType: "school",
         linkHash: "sIB9uTKMVLQ"
       },
       {
         date: 'May 9th',
-        group: 'L-Z',
         meetingType: "grouping",
         linkHash: "h9VU_KM_76I"
       },
       {
         date: 'April 18th',
-        group: 'A-K',
         meetingType: "school",
         linkHash: "W6mOw7zYVao"
       },
@@ -125,7 +121,7 @@ var app = new Vue({
   },
   computed: {
     date: function () {
-      return "Sunday, " + this.schedule[0].date + " (A-Z No More Split)"
+      return "Sunday, " + this.schedule[0].date
     },
     hasNotes: function () {
       let count = this.meetings.filter(meeting => meeting.hasOwnProperty('note')).length
