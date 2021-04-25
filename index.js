@@ -61,24 +61,24 @@ var app = new Vue({
           text: 'Meeting ID: "984 7945 8051" Passcode: "068265".'
         }
       },
-      {
-        name: 'Youth Sunday School 11-13 @ 11:30',
-        link: 'https://us05web.zoom.us/j/82813398554?pwd=cXBDenhUZklWZDlCK1VocklZbkhjQT09',
-        type: 'zoom',
-        note: {
-          title: 'Youth Sunday School 11-13',
-          text: 'Meeting ID: "828 1339 8554" Passcode: "QT8MCu".'
-        }
-      },
-      {
-        name: 'Youth Sunday School 14-17 @ 11:30',
-        link: 'https://us05web.zoom.us/j/86327485143?pwd=TURJb2NtYXhudTNwYWJFTkJOR3NzUT09',
-        type: 'zoom',
-        note: {
-          title: 'Youth Sunday School 14-17',
-          text: 'Meeting ID: "863 2748 5143" Passcode: "4b2ft6".'
-        }
-      }
+//       {
+//         name: 'Youth Sunday School 11-13 @ 11:30',
+//         link: 'https://us05web.zoom.us/j/82813398554?pwd=cXBDenhUZklWZDlCK1VocklZbkhjQT09',
+//         type: 'zoom',
+//         note: {
+//           title: 'Youth Sunday School 11-13',
+//           text: 'Meeting ID: "828 1339 8554" Passcode: "QT8MCu".'
+//         }
+//       },
+//       {
+//         name: 'Youth Sunday School 14-17 @ 11:30',
+//         link: 'https://us05web.zoom.us/j/86327485143?pwd=TURJb2NtYXhudTNwYWJFTkJOR3NzUT09',
+//         type: 'zoom',
+//         note: {
+//           title: 'Youth Sunday School 14-17',
+//           text: 'Meeting ID: "863 2748 5143" Passcode: "4b2ft6".'
+//         }
+//       }
     ],
     groupingMeetings: [
       {
