@@ -142,7 +142,8 @@ var app = new Vue({
       return count > 0
     },
     sacramentLink: function () {
-      let link = "https://youtu.be/" + this.schedule[0].linkHash
+      //let link = "https://youtu.be/" + this.schedule[0].linkHash
+      let link = 'http://http://mywebcast.churchofjesuschrist.org/smithfieldutahsouthstake'
       return link
     },
     sacramentEmbed: function () {
