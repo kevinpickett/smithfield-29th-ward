@@ -116,13 +116,14 @@ var app = new Vue({
 //         }
 //       },
       {
-        name: 'Sacred Grove and the Smith Farm via Zoom at 11:30',
-        link: 'https://zoom.us/j/97569151520?pwd=WTlPRy9GV2ZxS1dKUWdiYzFodmxUZz09',
-        type: 'zoom',
-        note: {
-          title: 'Sacred Grove Virtual Tour',
-          text: 'Meeting ID: "975 6915 1520" Passcode: "021383"'
-        }
+        name: 'Saturday evening Adult Session: 5/1/2021 @ 7pm',
+        link: 'http://mywebcast.churchofjesuschrist.org/smithfieldutahsouthstake',
+        type: 'other',
+      },
+      {
+        name: 'Sunday General Session: 5/2/2021 @ 10am',
+        link: 'http://http://mywebcast.churchofjesuschrist.org/smithfieldutahsouthstake',
+        type: 'other',
       }, 
     ],
     modalState: false,
