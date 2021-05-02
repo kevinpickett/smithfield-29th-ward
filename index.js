@@ -122,7 +122,7 @@ var app = new Vue({
       },
       {
         name: 'Sunday General Session: 5/2/2021 @ 10am',
-        link: 'http://http://mywebcast.churchofjesuschrist.org/smithfieldutahsouthstake',
+        link: 'http://mywebcast.churchofjesuschrist.org/smithfieldutahsouthstake',
         type: 'other',
       }, 
     ],
