@@ -32,26 +32,12 @@
         <h2 class="subtitle">
           {{date}}
         </h2>
-        <!--
+        
         <figure class="image is-16by9">
           <iframe class="has-ratio" width="640" height="360" :src="sacramentEmbed" frameborder="0" allowfullscreen></iframe>
         </figure>
-        -->
-        <div class="container" id="classes">
-          <aside class="menu">
-            <div v-for="meeting in meetings">
-              <ul class="menu-list">
-                <li>
-                  <a :href="meeting.link">
-                    <span class="has-text-weight-semibold">{{meeting.name + ":"}}</span>
-                    <span class="has-text-link" style="word-wrap: break-word;">{{meeting.link}}</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </aside>
-        </div> 
-        <!--
+        
+        
         <div class="pt-2">
           <p class="subtitle is-6 pt-2">
             <strong>Link:</strong> 
@@ -61,10 +47,10 @@
           <div class="level is-mobile">
             <div class="level-left"></div>
             <div class="level-right">
-              <!--<button class="button is-ghost" @click="setModal('youtubeEmbedBroken')"><strong>Video Player Issues</strong></button>
+              <button class="button is-ghost" @click="setModal('youtubeEmbedBroken')"><strong>Video Player Issues</strong></button>
             </div>
           </div>
-        </div>-->
+        </div>
       </div>
     </section>
     
@@ -108,7 +94,6 @@
     <hr>
 
     <!-- Classes -->
-    <!--
     <section v-if="meetings.length > 0" class="section pt-0 pb-0">
       <div class="container">
         <h1 class="title">Classes</h1>
@@ -131,7 +116,6 @@
         </div>    
       </div>
     </section>
-    -->
 
     <!-- Class Notes - If they exist -->
     <section class="section py-1" v-if="hasNotes">
