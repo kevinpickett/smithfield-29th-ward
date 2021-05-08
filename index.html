@@ -38,13 +38,14 @@
         
         
         <div class="pt-2">
-          <p class="subtitle is-6 pt-2">
-            <strong>Link:</strong> 
-            <a :href="sacramentLink" target="_blank" class="is-hidden-touch">{{sacramentLink}}</a>
-            <a :href="sacramentLink" class="is-hidden-desktop">{{sacramentLink}}</a>
-          </p>
           <div class="level is-mobile">
-            <div class="level-left"></div>
+            <div class="level-left">
+              <p class="subtitle is-6 pt-2">
+                <strong>Link:</strong> 
+                <a :href="sacramentLink" target="_blank" class="is-hidden-touch">{{sacramentLink}}</a>
+                <a :href="sacramentLink" class="is-hidden-desktop">{{sacramentLink}}</a>
+              </p>
+            </div>
             <div class="level-right">
               <button class="button is-ghost" @click="setModal('youtubeEmbedBroken')"><strong>Video Player Issues</strong></button>
             </div>
