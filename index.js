@@ -109,7 +109,7 @@ var app = new Vue({
       return count > 0
     },
     sacramentLink: function () {
-      let link = "https://youtu.be/" + this.schedule[0].linkHash
+      let link = "https://youtube.com/" + this.schedule[0].linkHash
       return link
     },
     sacramentEmbed: function () {
