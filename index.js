@@ -61,24 +61,6 @@ var app = new Vue({
           text: 'Meeting ID: "984 7945 8051" Passcode: "068265".'
         }
       },
-//       {
-//         name: 'Youth Sunday School 11-13 @ 11:30',
-//         link: 'https://us05web.zoom.us/j/82813398554?pwd=cXBDenhUZklWZDlCK1VocklZbkhjQT09',
-//         type: 'zoom',
-//         note: {
-//           title: 'Youth Sunday School 11-13',
-//           text: 'Meeting ID: "828 1339 8554" Passcode: "QT8MCu".'
-//         }
-//       },
-//       {
-//         name: 'Youth Sunday School 14-17 @ 11:30',
-//         link: 'https://us05web.zoom.us/j/86327485143?pwd=TURJb2NtYXhudTNwYWJFTkJOR3NzUT09',
-//         type: 'zoom',
-//         note: {
-//           title: 'Youth Sunday School 14-17',
-//           text: 'Meeting ID: "863 2748 5143" Passcode: "4b2ft6".'
-//         }
-//       }
     ],
     groupingMeetings: [
       {
@@ -91,7 +73,7 @@ var app = new Vue({
         }
       },
       {
-        name: 'Relief Society @ 11:30 am',
+        name: 'Relief Society @ 10:45 am',
         link: 'https://zoom.us/j/97569151520?pwd=WTlPRy9GV2ZxS1dKUWdiYzFodmxUZz09',
         type: 'zoom',
         note: {
@@ -99,32 +81,17 @@ var app = new Vue({
           text: 'Meeting ID: "975 6915 1520" Passcode: "021383"'
         }
       },
-      // { 
-      //   name: 'Primary Singing Time', 
-      //   link: 'https://youtu.be/vLUH8Q7VLsU',
-      //   type: 'youtube', 
-      // },
     ],
     fifthSundayMeetings: [
-//       {
-//         name: '5th Sunday Lesson @ 10:45 am',
-//         link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
-//         type: 'zoom',
-//         note: {
-//           title: '5th Sunday Lesson',
-//           text: 'Meeting ID: "984 7945 8051" Passcode: "068265"'
-//         }
-//       },
       {
-        name: 'Saturday evening Adult Session: 5/1/2021 @ 7pm',
-        link: 'http://mywebcast.churchofjesuschrist.org/smithfieldutahsouthstake',
-        type: 'other',
+        name: '5th Sunday Lesson @ 10:45 am',
+        link: 'https://zoom.us/j/98479458051?pwd=a2l5d1lnSHZKSWtJYlNUc0lraWlVUT09',
+        type: 'zoom',
+        note: {
+          title: '5th Sunday Lesson',
+          text: 'Meeting ID: "984 7945 8051" Passcode: "068265"'
+        }
       },
-      {
-        name: 'Sunday General Session: 5/2/2021 @ 10am',
-        link: 'http://mywebcast.churchofjesuschrist.org/smithfieldutahsouthstake',
-        type: 'other',
-      }, 
     ],
     modalState: false,
     modalType: ''
@@ -142,8 +109,7 @@ var app = new Vue({
       return count > 0
     },
     sacramentLink: function () {
-      //let link = "https://youtu.be/" + this.schedule[0].linkHash
-      let link = 'http://http://mywebcast.churchofjesuschrist.org/smithfieldutahsouthstake'
+      let link = "https://youtu.be/" + this.schedule[0].linkHash
       return link
     },
     sacramentEmbed: function () {
