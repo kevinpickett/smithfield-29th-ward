@@ -31,11 +31,6 @@ var app = new Vue({
   data: {
     schedule: [
       {
-        date: 'May 2nd',
-        meetingType: "fifthSunday",
-        linkHash: ""
-      },
-      {
         date: 'May 9th',
         meetingType: "grouping",
         linkHash: "h9VU_KM_76I"
@@ -46,9 +41,14 @@ var app = new Vue({
         linkHash: "W6mOw7zYVao"
       },
       {
-        date: 'April 25th',
-        meetingType: "fifthSunday",
+        date: 'May 23rd',
+        meetingType: "grouping",
         linkHash: "5YRZQ5Zw_nQ"
+      },
+      {
+        date: 'May 30th',
+        meetingType: "school",
+        linkHash: ""
       },
     ],
     sundaySchoolMeetings: [
