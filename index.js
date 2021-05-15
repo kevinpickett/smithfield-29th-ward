@@ -38,7 +38,7 @@ var app = new Vue({
       {
         date: 'May 23rd',
         meetingType: "grouping",
-        linkHash: "5YRZQ5Zw_nQ"
+        linkHash: "j5mAeI2bGk0"
       },
       {
         date: 'May 30th',
