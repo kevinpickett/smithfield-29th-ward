@@ -36,7 +36,6 @@
           <iframe class="has-ratio" width="640" height="360" :src="sacramentEmbed" frameborder="0" allowfullscreen></iframe>
         </figure>
         
-        
         <div class="pt-2">
           <div class="level is-mobile">
             <div class="level-left">
@@ -54,10 +53,9 @@
       </div>
     </section>
     
-    <hr>
-
     <!-- Goal -->
     <section class="section pt-0 pb-0">
+      <hr>
       <div class="container">
         <h1 class="title">Ward Goal</h1>
         <div class="has-text-centered">
@@ -68,10 +66,9 @@
       </div>
     </section>
 
-    <hr>
-    
     <!-- Announcements -->
-    <section class="section pt-0 pb-0">
+    <section class="section pt-0 pb-0" v-if="announcements.length > 0">
+      <hr>
       <div class="container">
         <div class="content">
           <h1 class="title">Announcements</h1>
@@ -86,10 +83,9 @@
       </div>
     </section>
     
-    <hr>
-
     <!-- Classes -->
     <section v-if="meetings.length > 0" class="section pt-0 pb-0">
+       <hr>
       <div class="container">
         <h1 class="title">Classes</h1>
         <h6 class="subtitle is-6">
