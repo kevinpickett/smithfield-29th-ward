@@ -32,7 +32,7 @@ var app = new Vue({
     schedule: [
       {
         date: 'May 23rd',
-        meetingType: "grouping",
+        meetingType: "none",
         linkHash: "FBPmQoD1yWc"
       },
       {
