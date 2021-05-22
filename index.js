@@ -37,18 +37,18 @@ var app = new Vue({
       },
       {
         date: 'May 30th',
-        meetingType: "school",
+        meetingType: "none",
         linkHash: ""
       },
       {
         date: 'June 6th',
-        meetingType: "grouping",
-        linkHash: "h9VU_KM_76I"
+        meetingType: "none",
+        linkHash: ""
       },
       {
-        date: 'May 16th',
-        meetingType: "school",
-        linkHash: "j5mAeI2bGk0"
+        date: 'June 13th',
+        meetingType: "none",
+        linkHash: ""
       },
     ],
     announcements: [
