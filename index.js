@@ -45,11 +45,6 @@ var app = new Vue({
         meetingType: "none",
         linkHash: ""
       },
-      {
-        date: 'May 23rd',
-        meetingType: "none",
-        linkHash: "FBPmQoD1yWc"
-      }
     ],
     announcements: [
       'Everyone is invited to attend sacrament meeting weekly in person at the church. The alternating schedule is no longer in place.',
