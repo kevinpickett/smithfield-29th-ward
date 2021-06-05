@@ -92,7 +92,7 @@
     </section>
     
     <!-- Classes -->
-    <section v-if="meetings.length > 0" class="section pt-0 pb-0">
+    <!-- <section v-if="meetings.length > 0" class="section pt-0 pb-0">
        <hr>
       <div class="container">
         <h1 class="title">Classes</h1>
@@ -114,10 +114,10 @@
           </aside>
         </div>    
       </div>
-    </section>
+    </section> -->
 
     <!-- Class Notes - If they exist -->
-    <section class="section py-1" v-if="hasNotes">
+    <!-- <section class="section py-1" v-if="hasNotes">
       <div class="container">
         <div class="container" v-for="meeting in meetings">
           <h6 class="subtitle is-6 pt-3" v-if="meeting.hasOwnProperty('note')">
@@ -128,7 +128,7 @@
           <button class="button is-ghost" @click="setModal('zoomWaitingScreen')"><strong>Zoom Waiting for Host?</strong></button>
         </div>
       </div>
-    </section>
+    </section> -->
     
     <!-- Disclaimer -->
     <section class="section pt-3">
