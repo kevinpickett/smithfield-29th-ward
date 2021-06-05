@@ -30,21 +30,11 @@ var app = new Vue({
   el: '#app',
   data: {
     schedule: [
-      {
-        date: 'June 6th',
-        meetingType: "none",
-        linkHash: ""
-      },
-      {
-        date: 'June 13th',
-        meetingType: "none",
-        linkHash: ""
-      },
-      {
-        date: 'June 20th',
-        meetingType: "none",
-        linkHash: "4qfcd2U24L8"
-      },
+      // {
+      //   date: 'June 6th',
+      //   meetingType: "none",
+      //   linkHash: ""
+      // },
     ],
     announcements: [
       'Everyone is invited to attend sacrament meeting weekly in person at the church. The alternating schedule is no longer in place.',
@@ -102,7 +92,7 @@ var app = new Vue({
   },
   computed: {
     date: function () {
-      return "Sunday, " + this.schedule[0].date
+      return this.getSundayDateString()
     },
     hasNotes: function () {
       let count = this.meetings.filter(meeting => meeting.hasOwnProperty('note')).length
@@ -113,27 +103,35 @@ var app = new Vue({
       return count > 0
     },
     sacramentLink: function () {
-      let link = "https://youtu.be/" + this.schedule[0].linkHash
+      let link = ''
+      if(this.schedule.length > 0) {
+        link = "https://youtu.be/" + this.schedule[0].linkHash
+      }
       return link
     },
     sacramentEmbed: function () {
-      let embed = "https://www.youtube.com/embed/" + this.schedule[0].linkHash
+      let embed = ''
+      if(this.schedule.length > 0) {
+        embed = "https://www.youtube.com/embed/" + this.schedule[0].linkHash
+      }
       return embed
     },
     meetings: function () {
-      let meetings
-      switch(this.schedule[0].meetingType) {
-        case 'school':
-          meetings = this.sundaySchoolMeetings
-          break
-        case 'grouping':
-          meetings = this.groupingMeetings
-          break
-        case 'fifthSunday':
-          meetings = this.fifthSundayMeetings
-          break
-        case 'none':
-          meetings = []
+      let meetings = []
+      if(this.schedule.length > 0) {
+        switch(this.schedule[0].meetingType) {
+          case 'school':
+            meetings = this.sundaySchoolMeetings
+            break
+          case 'grouping':
+            meetings = this.groupingMeetings
+            break
+          case 'fifthSunday':
+            meetings = this.fifthSundayMeetings
+            break
+          case 'none':
+            meetings = []
+        }
       }
       return meetings
     }
@@ -149,6 +147,26 @@ var app = new Vue({
         default:
           this.modalState = false
       }
+    },
+    getOrdinalNum(n) {
+      return n + (n > 0 ? ['th', 'st', 'nd', 'rd'][(n > 3 && n < 21) || n % 10 > 3 ? 0 : n % 10] : '')
+    },
+    getSundayDateString() {
+      let now = new Date();
+      let day = 0; // Sunday
+
+      if (day > 6 || day < 0) {
+        day = 0;
+      }
+        
+      while (now.getDay() != day) {
+        now.setDate(now.getDate() + 1);
+      }
+
+      let date = this.getOrdinalNum(now.getDate())
+      let month = now.toLocaleString('default', { month: 'long' });
+
+      return `Sunday, ${month} ${date}`
     }
   }
 })
