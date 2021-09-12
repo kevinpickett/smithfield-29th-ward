@@ -37,8 +37,7 @@ var app = new Vue({
       },
     ],
     announcements: [
-      'Everyone is invited to attend sacrament meeting weekly in person at the church.',
-      'The blessing and passing of the sacrament will be returning to the beginning of sacrament meeting.',
+      'The blessing and passing of the sacrament has returned to the beginning of sacrament meeting.',
       'The sacrament meeting broadcast will begin at about 9:25, upon the completion of the passing of the sacrament.',
     ],
     sundaySchoolMeetings: [
