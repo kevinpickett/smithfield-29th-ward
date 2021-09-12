@@ -33,7 +33,7 @@ var app = new Vue({
       {
         date: 'September 12th',
         meetingType: "none",
-        linkHash: "Qt2jW5JBtwI"
+        linkHash: "Wc_n0DVaoRo"
       },
     ],
     announcements: [
