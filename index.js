@@ -30,20 +30,16 @@ var app = new Vue({
   el: '#app',
   data: {
     schedule: [
-      // {
-      //   date: 'June 6th',
-      //   meetingType: "none",
-      //   linkHash: ""
-      // },
+      {
+        date: 'September 12th',
+        meetingType: "none",
+        linkHash: "Qt2jW5JBtwI"
+      },
     ],
     announcements: [
-      'Everyone is invited to attend sacrament meeting weekly in person at the church. The alternating schedule is no longer in place.',
+      'Everyone is invited to attend sacrament meeting weekly in person at the church.',
       'The blessing and passing of the sacrament will be returning to the beginning of sacrament meeting.',
       'The sacrament meeting broadcast will begin at about 9:25, upon the completion of the passing of the sacrament.',
-      'All second hour classes are now in person every week from 10:00 to 10:45 A.M.',
-      'Primary will once again include both singing time and sharing time. Junior Primary (Sunbeams - CTR 6) will start in the primary room and Senior Primary (CTR 7 - Valiant 10) will start in their classrooms.',
-      'Nursery is not yet back in place. If you have nursery aged children, you are invited to bring them with you to your adult classes.',
-      'Wearing masks is optional moving forward.'
     ],
     sundaySchoolMeetings: [
       {
