@@ -36,10 +36,7 @@ var app = new Vue({
         linkHash: "4G7w9IOgo2g"
       },
     ],
-    announcements: [
-      'The blessing and passing of the sacrament has returned to the beginning of sacrament meeting.',
-      'The sacrament meeting broadcast will begin at about 9:25, upon the completion of the passing of the sacrament.',
-    ],
+    announcements: [],
     sundaySchoolMeetings: [
       {
         name: 'Gospel Doctrine @ 10:45',
