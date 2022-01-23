@@ -36,7 +36,9 @@ var app = new Vue({
         linkHash: "4G7w9IOgo2g"
       },
     ],
-    announcements: [],
+    announcements: [
+      'The Sacrament meeting broadcast will begin betweeen 10:50 and 11:00 after the conclusion of the sacrament.'
+    ],
     sundaySchoolMeetings: [
       {
         name: 'Gospel Doctrine @ 10:45',
