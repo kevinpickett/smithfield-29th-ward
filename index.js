@@ -31,9 +31,9 @@ var app = new Vue({
   data: {
     schedule: [
       {
-        date: 'January 30th',
+        date: 'February 6th',
         meetingType: "none",
-        linkHash: "6XglG_cjL7M"
+        linkHash: "FYoV6M2vWUU"
       },
     ],
     announcements: [
